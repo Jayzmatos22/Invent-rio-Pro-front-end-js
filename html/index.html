@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventário Pro - index</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="index-body text-slate-200 antialiased flex">
+    <aside class="w-64 h-screen sticky top-0 glass-panel p-6 flex flex-col">
+        
+        <!-- LOGO -->
+        <div class="mb-10 flex items-center gap-3">
+            <div class="w-8 h-8 bg-green-400 rounded-full flex items-center justify-center">
+                <span class="font-black text-black text-xs">IP</span>
+            </div>
+            <h1 class="font-bold text-xl tracking-tight text-white">InvPro <span class="text-green-500">.</span></h1>
+        </div>
+
+        <!-- NAVEGAÇÃO -->
+        <nav class="flex flex-col space-y-3">
+            <a href="dashboard.html" class="flex gap-4 items-center p-3 rounded-xl transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                    <path d="M3 12h18M3 6h18M3 18h18"></path>
+                </svg>
+                <span class="aside-navegation">Dashboard</span>
+            </a>
+
+            <a href="products.html" class="flex gap-4 items-center p-3 rounded-xl transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+                <span class="aside-navegation">Produtos</span>
+            </a>
+
+            <a href="account.html" class="flex gap-4 items-center p-3 rounded-xl transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                    <path d="M20 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M4 21v-2a4 4 0 0 1 3-3.87"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                <span class="aside-navegation">Conta</span>
+            </a>
+        </nav>
+    </aside>
+    
+    <main class="flex-1 p-6 content-container">
+        <div class="container-monitor">
+            <div class="p-4">
+                <i data-lucide="monitor-cog"></i>
+            </div>
+        </div>
+        <h1 id="user-name" class="antialiased font-black"></h1>
+        <p class="antialised">Você está no painel de controle do Inventário Pro, você pode gerenciar seus produtos, visualizar relatórios e configurar sua conta.</p>
+    </main>
+    
+</body>
+    <script>
+        lucide.createIcons();
+        const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+        firstName = currentUser.name.split(' ')[0];
+        document.querySelector('#user-name').textContent = `Bem-vindo ao Inventário Pro, ${firstName.charAt(0).toUpperCase() + firstName.slice(1)}!`;
+    </script>
+</html>

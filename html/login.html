@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <script src="../js/scripts.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="login-page">
+    <div class="loginContainer">
+        <div class="backgroundLoginForm">
+            <h2 class="font-black text-2xl text-center">
+                <p class="messageLogin rounded-full">Fazer Login</p>
+            </h2>
+            <form id="formLogin" class="space-y-4">
+                <div>
+                    <label for="emailUser" class="block font-black">Email</label>
+                    <input type="email" id="emailUser" name="email" required class="hover:scale-105 hover:bg-blue-100 w-full px-3 py-2 mt-1 border rounded-full focus:outline-none focus:ring focus:ring-blue-200" placeholder="example@gmail.com">
+                </div>
+                <div>
+                    <label for="passwordUser" class="block font-black" >Senha</label>
+                    <input type="password" id="passwordUser" name="password" 
+                    required class="hover:scale-105 hover:bg-blue-100 w-full px-3 py-2 mt-1 border rounded-full focus:outline-none 
+                    focus:ring focus:ring-blue-200" placeholder="Digite sua senha">
+                    
+                </div>
+                <button type="submit" class="w-full px-4 py-2 font-semibold text-white bg-blue-800 rounded-md hover:bg-green-500 focus:outline-none focus:ring focus:ring-blue-200">Entrar</button>
+            </form><br>
+            <p class="text-gray-400 text-sm text-center">Não tem uma conta? <a href="registerUser.html" class="text-blue-600 hover:underline">Registre-se</a></p>
+        </div>
+    </div>
+    
+</body>
+</html>
