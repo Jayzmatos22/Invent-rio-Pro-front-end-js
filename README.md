@@ -84,6 +84,16 @@ O **InvPro** foi desenhado para atacar esses pontos diretamente:
 - **UX Reativa:** Inputs que validam dados em tempo real com mudança de cor nas bordas (Green/Red).
 
 ---
+## 🛠️ Tech Stack
+
+| Camada | Tecnologia |
+| :--- | :--- |
+| **Estrutura** | HTML5 Semântico |
+| **Estilização** | Tailwind CSS (Glassmorphism & Dark Mode) |
+| **Lógica** | JavaScript Vanilla (ES6+) |
+| **Ícones** | Lucide Icons |
+| **Persistência** | LocalStorage API |
+---
 
 ## 🧠 Evolução Técnica
 
