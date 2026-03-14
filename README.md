@@ -87,7 +87,7 @@ O **InvPro** foi desenhado para atacar esses pontos diretamente:
 
 ## 🧠 Evolução Técnica
 
-Iniciei meus estudos em **ADS (Análise e Desenvolvimento de Sistemas)** em **4 de agosto de 2025**, vindo do zero absoluto. Após 7 meses focados na lógica rigorosa do Backend (Java/Python), apliquei esse conhecimento no Frontend para criar um sistema persistente e seguro sem a necessidade imediata de um banco de dados externo.
+Iniciei meus estudos em **ADS (Análise e Desenvolvimento de Sistemas)** em **4 de agosto de 2025**, vindo do zero absoluto. Após 7 meses focados na lógica rigorosa do Backend (Java/Python), apliquei esse conhecimento no Frontend para criar um sistema persistente e seguro sem a necessidade imediata de um banco de dados externo. Após 1 mês com foco em front-end, fiz esse sistema.
 
 ---
 
@@ -95,4 +95,4 @@ Iniciei meus estudos em **ADS (Análise e Desenvolvimento de Sistemas)** em **4 
 
 1. Clone o repositório:
    ```bash
-   git clone [https://github.com/seu-usuario/invpro.git](https://github.com/seu-usuario/invpro.git)
+   git clone [https://github.com/Jayzmatos22/Invent-rio-Pro-front-end-js](https://github.com/Jayzmatos22/Invent-rio-Pro-front-end-js)
