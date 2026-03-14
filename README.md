@@ -106,3 +106,33 @@ Iniciei meus estudos em **ADS (Análise e Desenvolvimento de Sistemas)** em **4 
 1. Clone o repositório:
    ```bash
    git clone [https://github.com/Jayzmatos22/Invent-rio-Pro-front-end-js](https://github.com/Jayzmatos22/Invent-rio-Pro-front-end-js)
+
+---
+
+## 📂 Estrutura do Projeto
+
+A organização dos arquivos segue uma estrutura modular para separar responsabilidades entre design, lógica e conteúdo:
+
+```text
+INVENTARIOPRO/
+├── assets/                 # Capturas de tela e recursos visuais
+│   ├── accountInvPro.png
+│   ├── dashboardInvPro.png
+│   ├── indexInvPro.png
+│   ├── initialPageInvPro.png
+│   ├── loginInvPro.png
+│   ├── productsInvPro.png
+│   └── registerUserInvPro.png
+├── css/                    # Estilização global e componentes
+│   └── styles.css
+├── html/                   # Páginas da aplicação
+│   ├── account.html
+│   ├── dashboard.html
+│   ├── index.html
+│   ├── initialPage.html
+│   ├── login.html
+│   ├── products.html
+│   └── registerUser.html
+├── js/                     # Lógica de negócio e manipulação de DOM
+│   └── scripts.js
+└── README.md               # Documentação principal
